@@ -10,7 +10,7 @@ Este proyecto contiene un laboratorio de **MLOps** usando MLflow para seguimient
   3. Experimento de red neuronal con autologging.
   4. Interpretación de resultados usando Ollama.
 - `requirements.txt` – Dependencias necesarias (sin versiones específicas).
-- `informe.md` – Resumen del laboratorio, resultados y reflexiones.
+- `informe.md` – Resumen del laboratorio, resultados y reflexiones 📄 **[Ver informe completo](informe.md)**.
 - `captures/` – Carpeta sugerida para capturas de MLflow UI y artefactos.
 - `artifacts/` – Carpeta con modelos guardados, gráficos y archivos de resumen.
 
