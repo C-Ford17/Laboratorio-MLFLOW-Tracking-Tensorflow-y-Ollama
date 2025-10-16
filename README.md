@@ -25,7 +25,7 @@ Este proyecto contiene un laboratorio de **MLOps** usando MLflow para seguimient
 - **Red neuronal:** Modelo `.h5`, TensorBoard logs, summary.txt
 
 ## Interpretación con Ollama
-Se realizaron preguntas sobre métricas y desempeño de los modelos. Las respuestas se guardaron en `artifacts/interpretacion_ollama.txt`.
+Se realizaron preguntas sobre métricas y desempeño de los modelos. Las respuestas se guardaron en `/interpretacion_ollama.txt`.
 
 ## Cómo Ejecutar
 1. Crear y activar un entorno virtual.
