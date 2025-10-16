@@ -4,7 +4,7 @@ Este proyecto contiene un laboratorio de **MLOps** usando MLflow para seguimient
 
 ## Contenido
 
-- `notebook.ipynb` – Notebook principal con todos los pasos:
+- `MLFLOW_TRACKING_LABORATORY.ipynb` – Notebook principal con todos los pasos:
   1. Carga y preprocesamiento del dataset.
   2. Experimento de regresión logística con nested CV.
   3. Experimento de red neuronal con autologging.
