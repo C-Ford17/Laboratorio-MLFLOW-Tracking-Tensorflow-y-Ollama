@@ -1,0 +1,12 @@
+# Entornos
+.env
+__pycache__/
+*.pyc
+
+# Archivos de MLflow
+mlruns/
+mlartifacts/
+
+# Entornos virtuales
+venv/
+.env/

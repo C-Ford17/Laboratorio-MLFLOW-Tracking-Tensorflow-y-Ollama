@@ -1,0 +1,63 @@
+Pregunta: ¿Qué significa obtener un F1-score de 0.88?
+Respuesta: Un F1-score (también conocido como F-measure o F-Score) es un métrica comúnmente utilizada para evaluar el rendimiento de modelos de aprendizaje automático, especialmente en problemas de clasificación.
+
+El F1-score combina dos aspectos clave:
+
+1. **Precision** (exactitud): La cantidad de predicciones correctas dividida entre el total de predicciones.
+2. **Recall** (sensibilidad o tasa de verdaderos positivos): La cantidad de verdaderos positivos divisido entre el total de verdaderos positivos y falsos negativos.
+
+El F1-score se calcula como la media armónica de la precision y la recall:
+
+F1 = 2 \* (precision \* recall) / (precision + recall)
+
+Un valor de F1-score cercano a 1 es excelente, mientras que un valor próximo a 0 indica un rendimiento pobre.
+
+En tu caso, obtener un F1-score de 0.88 significa que el modelo tiene una precisión y recall relativamente altas para detectar los positivos (o verdaderos positivos).
+
+Para contextualizar mejor este resultado:
+
+* Un F1-score muy alto (mayor o igual a 0.9) puede indicar un modelo que es bueno en detectar la mayoría de los positivos, aunque puede hacer algunas predicciones erróneas.
+* Un F1-score moderado (entre 0.7 y 0.9) sugiere que el modelo tiene una buena sensibilidad y precisión, pero puede no ser tan efectivo en detectar todos los positivos o tener un número significativo de falsos negativos.
+
+Recuerda que el F1-score depende del equilibrio entre precision y recall, según las necesidades específicas de tu problema.
+Pregunta: ¿Por qué una red neuronal podría tener mejor recall que una regresión logística?
+Respuesta: Una red neuronal y una regresión logística son dos enfoques diferentes para resolver problemas de clasificación binaria (dos etiquetas o clases). Aunque ambas técnicas pueden ser efectivas, hay algunas razones por las que una red neuronal podría tener mejor recall (también conocido como verdadera positiva) que una regresión logística:
+
+1. **Función de activación más versátil**: La mayoría de las redes neuronales utilizan funciones de activación no lineales, como la sigmoidal o la softmax, que pueden modelar relaciones más complejas entre las variables input y output. En comparación, la regresión logística utiliza una función de activación logística (1 / (1 + e^(-x))) que es más limitada en su capacidad para capture relación más complejas.
+2. **Capacidad de aprender patrones**: Las redes neuronales tienen la capacidad de aprender patrones y relacionar variables input con las salidas de manera más flexible, lo que les permite capturar estructuras más complejas en los datos. Esto puede ser particularmente útil cuando los datos contienen variabilidad o no linealidad.
+3. **No linealidad nativa**: Las redes neuronales pueden aprender no linealidades nativamente, debido a la introducción de capas ocultas y funciones de activación no lineales. Esta no linealidad puede ser útil para el problema de clasificación binaria cuando los datos no se ajustan a una relación lineal.
+4. **Mejora en la separabilidad**: Las redes neuronales pueden entrenarse para mejorar la separabilidad entre las clases, lo que les permite detectar patrones más complejos y reducir la tasa de falsos positivos (errores tipo II). Esto puede ser especialmente útil si se tienen características no linealmente relacionadas con la salida.
+5. **Mejora en la robustez**: Las redes neuronales pueden ser diseñadas para ser más resistentes a ruido y fluctuaciones en los datos, lo que les permite mantener un buen recall incluso en presencia de outliers o noisy data.
+
+En resumen, las redes neuronales pueden tener mejor recall que una regresión logística debido a su capacidad para aprender patrones complejos, no linealidad nativa, mejora en la separabilidad y robustez. Sin embargo, es importante destacar que la red neuronal solo será efectiva si se selecciona correctamente la arquitectura de la red y los hiperparámetros, ya sea utilizando una búsqueda exhaustiva o técnicas de optimización inteligente.
+
+En resumen, **no** todas las redes neuronales tienen mejor recall que la regresión logística, sino que depende de la naturaleza del problema y de cómo se diseñen y entrenen las redes neuronales.
+Pregunta: ¿Qué podría mejorar el rendimiento de los modelos en este dataset?
+Respuesta: La eterna pregunta! Sin información específica sobre el dataset y los modelos que estás utilizando, se puede hacer una lista general de posibles mejoras:
+
+1. **Data Preprocessing**:
+	* Revisar y normalizar los datos: hay que asegurarse de que los valores están escalados correctamente para evitar sesgos en la modelado.
+	* Handling missing values: si el dataset tiene valores missing, es importante agregarlos o reemplazarlos con una estrategia adecuada (e.g., media o promedio).
+	* One-hot encoding: convertir categorical variables a binarias para que los modelos puedan manejarlas correctamente.
+2. **Selecting the right model**:
+	* Identificar el tipo de problema: clasificación, regresión, clustering...
+	* Seleccione un modelo adecuado: por ejemplo, si el problema es binario (0/1), podría ser adecuado utilizar un árbol de decisión o una red neuronal simple.
+3. **Tuning hyperparameters**:
+	* Experimentar con diferentes valores de pesos y penalizaciones L1 y L2 para regularización.
+	* Adjustear parámetros como num_layers, dropout, batch_size, epochs, etc., en modelos de deep learning.
+4. **Collecting more data**:
+	* Recoger másdatos: si el dataset es pequeño, podria ser que los modelos no puedan aprender bien debido a la limitación de datos.
+	* Data augmentation: aplicar transformaciones aleatorias para aumentar la diversidad del dataset y evitar sobreajuste.
+5. **Regularization**:
+	* L1 regularization (Lasso): penalizar parámetros para reducir el overfitting.
+	* L2 regularization: penalizar parámetros para reducir el overfitting y regularizar el modelo.
+6. **Early stopping**:
+	* Implementar early stopping: parar la entrenamiento cuando el rendimiento del modelo comienza a decaer, evitar sobreajuste.
+7. **Ensemble methods**:
+	* Utilizar técnicas de ensemble learning (e.g., bagging, boosting) para combinar los resultados de varios modelos y mejorar el desempeño global.
+8. **Feature engineering**:
+	* Crear características nuevas: si se pueden crear características adicionales que estén relacionadas con la respuesta variable, esto podría mejorar el rendimiento del modelo.
+9. **Model selection and ensemble**:
+	* Seleccione un conjunto de modelos y combinar sus resultados mediante técnicas de ensemble learning para mejorar el desempeño global.
+
+Recuerda que estas sugerencias pueden ser irrelevantes o inaplicables dependiendo de la naturaleza específica del dataset y los modelos que estás utilizando. Es importante investigar y experimentar con diferentes enfoques para encontrar lo que funciona mejor para tus datos.
